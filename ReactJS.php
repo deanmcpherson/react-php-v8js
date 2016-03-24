@@ -150,7 +150,7 @@ class ReactJS {
    * @param string $js JS code to be executed
    * @return string The execution response
    */
-  private function executeJS($js) {
+  public function executeJS($js) {
     try {
       ob_start();
       $this->v8->executeString($js);
